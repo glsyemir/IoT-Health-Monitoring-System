@@ -9,8 +9,8 @@
 #include <time.h>   // NTP timestamp
 
 // -------- Wi‑Fi / Server Config --------
-const char* WIFI_SSID     = "S9";
-const char* WIFI_PASS     = "pvli6032";
+const char* WIFI_SSID     = "wifi name";
+const char* WIFI_PASS     = "password";
 const char* SERVER_URL    = "http://192.168.43.245:8080"; // Raspberry Pi 5 listener
 const char* NODE_ID       = "Node5";                      // make unique per device
 const uint32_t SEND_PERIOD_MS = 2000;                     // JSON POST period
@@ -332,3 +332,4 @@ int bpmToInt(float x){
   if (isnan(x) || x<20 || x>220) return 0;
   return (int)(x+0.5f);
 }
+
